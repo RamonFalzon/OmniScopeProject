@@ -1,0 +1,16 @@
+.snippet {
+    display: block;
+    padding: 8px;
+    margin: 8px;
+}
+
+.markcell {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.codecell {
+    background-color: black;
+    color: green;
+
+}
