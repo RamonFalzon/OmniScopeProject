@@ -2,12 +2,12 @@
 
 # Commands used so far
 
-#This uses a virtualized environment for the packages
+# This uses a virtualized environment for the packages
 
-#Python: Create Virtual Environment
-#Venv
+# Python: Create Virtual Environment
+# Venv
 
-#Select interpreter
+# Select interpreter
 
 # /setup.bat
 # .\.venv\Scripts\activate

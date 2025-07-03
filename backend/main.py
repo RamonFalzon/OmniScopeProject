@@ -30,8 +30,16 @@ async def root(ping: str = None):
     else:
         return {"status": "default_response"}
 
-
-
+@app.post("/execute_code")
+async def root(id: int = 0, code: str = None):
+    if (id == 0):
+        return {"error": "missing id"}
+    
+@app.post("/delete_context")
+async def root(id: int = 0):
+    if (id == 0):
+        return {"error": "missing id"}
+    
 # @app.get("/")
 # async def root():
 #     return {"ping" : "pong"};
