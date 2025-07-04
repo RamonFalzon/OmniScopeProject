@@ -80,7 +80,7 @@ function CodeCell({ id, onDelete }: { id: number; onDelete: (id: number) => void
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ id: id, code: codeValue }), // This correctly uses codeValue
+                body: JSON.stringify({ id: id, code: codeValue }),
             });
 
             if (!response.ok) {
@@ -113,8 +113,8 @@ function CodeCell({ id, onDelete }: { id: number; onDelete: (id: number) => void
             </div>
             <br />
             <textarea
-                value={codeValue} // Make value controlled by state
-                onChange={(e) => setCodeValue(e.target.value)} // Update state on every input change
+                value={codeValue}
+                onChange={(e) => setCodeValue(e.target.value)}
                 rows={4}
                 style={{ width: '100%', minHeight: '60px', fontFamily: 'monospace' }}
             />
@@ -130,7 +130,7 @@ function CodeCell({ id, onDelete }: { id: number; onDelete: (id: number) => void
 
 function MarkCell({ id, onDelete }: { id: number; onDelete: (id: number) => void }) {
     const [markdownValue, setMarkdownValue] = useState<string>("**Hello!** Click to *edit* this markdown cell.");
-    const [isEditing, setIsEditing] = useState<boolean>(false); // New state to manage edit mode
+    const [isEditing, setIsEditing] = useState<boolean>(false);
 
     return (
         <div className="snippet markcell">
