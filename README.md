@@ -1,5 +1,7 @@
 # OmniScopeProject
 
+# Python 3.10 was used for this
+
 # Installation:
 # Execute these commands:
 # ./setupbackend
